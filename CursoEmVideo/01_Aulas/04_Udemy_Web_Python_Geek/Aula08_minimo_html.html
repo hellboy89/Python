@@ -1,0 +1,82 @@
+<!--
+
+===============> O QUE É HTML?
+
+É uma linguagem de marcação para Hipertexto, que são os textos com recursos avançados, como imagens links,
+parágrafos, divisões e muito mais.
+
+Inclusive toda parte da internet que acessamos é feito basicamente com HTML. Basta somente clicar com o dedo direito
+em qualquer página e será mostrado o código fonte feito em HTML.
+
+Ao trabalhar com HTML, para fácil organização, ele é feito em estruturas que são o Header, Body e Footer.
+
+- HEADER: Usado para tags de informação sobre o site, aplicação de estilos css e etc.
+
+- BODY: Conteúdo do site que é apresentado ao cliente.
+
+- FOOTER: Geralmente usado para carregamento de scripts Javascript e apresentação de dados de rodapé.
+
+OBS: O FOOTER fica dentro da área do conteúdo.
+
+Uma página WEB é lida pelo navegador (ou redenrizar) sempre de cima para baixo. Começando pelo HEADER.
+
+-->
+
+<!--
+Essa linha abaixo DOCTYPE é apenas um informativo, que irá informar para o navegador que está sendo utilizado
+um documento em HTML.
+Lembrando que é uma TAG, e toda TAG que se abre ela é fechada em algum momento, nesse caso o HTML é fechado no fim.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--Essa linha abaixo é para mostrar qual será a codificação do TEXTO, UTF-8 aceita caractéres com acentos e pt-br.-->
+<!--Abaixo é um tipo de TAG que não se fecha, há algumas do tipo, algumas fecham e outras não.-->
+    <meta charset="UTF-8">
+<!--TAG Abaixo mostra o título da Janela.-->
+    <title>TESTE</title>
+<!--O Head se fecha abaixo.-->
+</head>
+<!--Tudo que aparece dentro uma página WEB, fica dentro de BODY.-->
+<body>
+<!--Aqui faz a formatação da fonte para 45.-->
+    <p> Programação WEB3</p>
+    <!-- Para adicionar uma imagem, possível com o diretório abaixo. Como diretório está na mesma pasta, o tamanho fica assim. -->
+    <img src="exemplo1_imagem.jpg"
+</body>
+</html>
+<!--
+
+Também é possível criar um próprio serviço WEB para abrir páginas HTTP, utilizando o comando no powershell ou cmd.
+Indo direto pelo diretório onde tá armazenado o arquivo HTML, usando o CD e DIR.
+Após isso digitar o comando "python3 -m http.server 8000", onde será criado um servidor local na porta 8000.
+Que pode ser acessado pelo endereço http://127.0.0.1:8000.
+
+===============> DIVISÃO DE TAGS
+
+As TAGS HTML são divididas em dois grupos principais.
+
+- ELEMENTOS DE BLOCO: Utilizam todo o espaço disponível e começam uma nova linha no documento
+- ELEMENTOS EM LINHA: Utilizam apenas o espaço necessário e não criam uma quebra de linha.
+
+OBS.: Iremos entender melhor a diferença entre eles no exemplos desta aula.
+
+===============> TAGS Mais Utilizadas
+
+<html> </html>: É o elemento de maior nível que está em todas as páginas HTML.
+<head> </head>: Possui informações do meta como título e charset da página.
+<body> </body>: Engloba todos os elementos que são mostrados na página.
+<h1> </h1>, <h2> </h2>, <h3> </h3>, <h4> </h4>, <h5> </h5>, <h6> </h6>: Cabeçalhos em nível de 1 a 6, onde o 1 é o maior nível e o 6 o menor.
+<div> </div>: Divisões de seções de conteúdo.
+<p> </p>: Parágrafo.
+<blockquote> </blockquote>: Bloco de citações.
+<ol> </ol>: Listas ordenadas.
+<ul> </ul>: Listas não ordenadas.
+<li> </li>: Item de listas.
+<strong> </strong>: Renderiza um texto em negrito.
+<em> </em>: Renderiza um texto em itálico.
+<a> </a>: Cria um link para outra página ou documento.
+<img>: Adiciona imagem na página.
+
+-->

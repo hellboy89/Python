@@ -1,0 +1,28 @@
+.teste3 {
+    color: brown;
+    size: 42px;
+    background: chartreuse;
+}
+
+p {
+    color: red;
+    font-weight: bold;
+    background: pink;
+}
+
+.teste1 {
+    color: green;
+    font-weight: inherit;
+    background: purple;
+}
+
+.teste2 {
+    color: white;
+    background: black;
+    font-weight: bold;
+}
+
+#teste4 {
+    color: purple;
+    font-size: 35px;
+}

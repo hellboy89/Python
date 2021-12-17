@@ -1,0 +1,24 @@
+===========================================
+            PESSOAS CADASTRADAS
+===========================================
+
+Nome: juan
+Idade: 32
+Nome: marcos
+Idade: 28
+Nome: denise
+Idade: 62
+Nome: godofredo
+Idade: 73
+Nome: robertinho
+Idade: 80
+Nome: haha
+Idade: 110
+Nome: juan
+Idade: 32
+Nome: juan
+Idade: 32
+Nome: juan
+Idade: 32
+Nome: juan
+Idade: 32
