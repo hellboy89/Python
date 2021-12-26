@@ -15,3 +15,4 @@ def func():
 func()
 
 print(valor)
+
