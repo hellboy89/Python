@@ -1,5 +1,7 @@
 # Comando abaixo limpa o terminal antes de executar o próximo código
-print("\x1bc")
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def lista():
     import sys
@@ -32,6 +34,7 @@ def lista():
 
     print(sys.getsizeof(lista3))
 
+
 def gerador():
     import sys
     import time
@@ -40,13 +43,15 @@ def gerador():
         yield n
         time.sleep(0.01)
 
+
 def iniciarGerador():
     g = gerador()
 
     for v in g:
-        print(v, end = ' ')
+        print(v, end=' ')
 
 # iniciarGerador()
+
 
 def _071_geradoresIteradores():
     nome = "Juan Cleber"
@@ -75,6 +80,7 @@ def _071_geradoresIteradores():
 
 # _071_geradoresIteradores()
 
+
 def _071_consumirGerador():
     nome = "Juan Cleber"
     iterador = iter(nome)
@@ -95,6 +101,7 @@ def _071_consumirGerador():
 
 # _071_consumirGerador()
 
+
 def _072_exercicioListComprehension():
     carrinho = []
     carrinho.append(('Produto 1', 30.50))
@@ -106,7 +113,32 @@ def _072_exercicioListComprehension():
     print(f"{total:.2f}")
 
 
-_072_exercicioListComprehension()
+# _072_exercicioListComprehension()
+
+def _074_zip():
+    cidades = ['sap paulo', 'belo horizonte', 'salvador', 'monte belo']
+    estados = ['sp', 'mg', 'ba']
+
+    # com o zip é possível unir valores de uma variável a outra.
+
+    cidades_estados = zip(estados, cidades)
+    print(list(cidades_estados))
 
 
+# _074_zip()
 
+def _074_zipLongest():
+    from itertools import zip_longest
+
+    cidades = ['sap paulo', 'belo horizonte', 'salvador', 'monte belo']
+    estados = ['sp', 'mg', 'ba']
+
+    # com o zip é possível unir valores de uma variável a outra.
+
+    cidades_estados = zip_longest(estados, cidades)
+    print(list(cidades_estados))
+
+
+_074_zipLongest()
+
+# CONTINUAR NA AULA DE ZIP_LONGEST
